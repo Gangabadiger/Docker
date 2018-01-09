@@ -1,0 +1,7 @@
+FROM 892c6f866bcf
+
+ADD Docker /var/www/html
+
+CMD apachectl -D FOREGROUND
+
+RUN rm var/www/html/index.html
